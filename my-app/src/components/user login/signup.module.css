@@ -1,0 +1,133 @@
+.login {
+  float: none;
+  width: 100%;
+  background: #3c55a2;
+  background-image: url(https://www.yoox.com/media/yoox16/icons/facebook_24.png);
+  border: 2px solid #3c55a2;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+.onOver {
+  opacity: 0.01;
+  transition: all 1s ease 0s;
+  background: #3c55a2;
+  display: table;
+  font-size: 12px;
+  height: 46px;
+  line-height: 46px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overtext {
+  height: 46px;
+  line-height: 46px;
+  font-size: 12px;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.google {
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  background-image: url(https://www.yoox.com/media/yoox16/icons/google_24.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 2px solid #f2f2f2;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.googleon {
+  opacity: 0.01;
+  transition: all 1s ease 0s;
+  background: #fff;
+  color: #333;
+  display: table;
+  font-size: 12px;
+  height: 46px;
+  line-height: 46px;
+  width: 100%;
+}
+.googletext {
+  height: 46px;
+  display: block;
+  color: #333;
+  font-size: 12px;
+  line-height: 46px;
+}
+.inputText {
+  font-size: 14px;
+}
+
+.floating label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+}
+.inputText:focus ~ .floatinglabel,
+.inputText:not(:focus):valid ~ .floatinglabel {
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+.line {
+  border: none;
+  border-top: 1px dotted black;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 30%;
+}
+.border {
+    background: url(https://www.yoox.com/media/yoox16/myoox/border_dotted_big.png) repeat-x 0 100%;
+    border: none;
+    height: 9px;
+   
+}
+.line1{
+  border: none;
+  border-top: 1px dotted black;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 100%;
+  padding-top:20px;
+}
+.a{
+margin-left:30px;
+}
+
+.green{
+  background: url(https://www.yoox.com/images/yoox80/banners/6965_2_Premium_DM.png?634485886869569819#width=1379&height=67);
+  text-Align:center;
+  padding:10px
+}
+.big{
+  background:url(https://secure.social.yoox.it/yspecial/NATALE/2022/hero_v6.png?v=1);
+  border:1px solid black;
+  height:550px;
+  width: 100%;
+  object-fit:cover
+}
