@@ -30,7 +30,8 @@ const Navbar = () => {
       <p style={{fontSize:"13px"}}>By changing the location, delivery options of that location will apply and all items will be removed from your Shopping Bag.</p>
       <CloseIcon  w={3} h={3}/> 
     </div>
-    <table  style={{display:"flex",gap:'80px',fontSize:"15px",marginTop:'10px'}}>
+    <table  style={{display:"flex",gap:"80px",fontSize:"15px",marginTop:'10px'}}>
+    <tbody>
     <div style={{marginLeft:"20px" }}>
     <td >
       <tr><Link to="/">UNITED STATES</Link></tr>
@@ -64,6 +65,7 @@ const Navbar = () => {
           <tr><Link to="/">LEBANON</Link></tr>
           </td>
       </div>
+      </tbody>
     </table>
   </div>
   </MenuList>
@@ -109,7 +111,7 @@ const Navbar = () => {
   <div style={{marginLeft:"80px"}}>
     <Menu>
     <Menu backgroundColor="white"  pl={25} fontSize={12}  _hover={{textDecoration:"underline"}} as={Button} >
-      <Link style={{fontSize:"10",fontWeight:"600",marginLeft:"70px"}} _hover={{textDecoration:"underline" }} to="/register">REGISTER</Link>
+      <Link style={{fontSize:"10",fontWeight:"600",marginLeft:"70px"}} _hover={{textDecoration:"underline" }} to="/signup">REGISTER</Link>
     </Menu>
     </Menu>
     <Menu>
@@ -137,16 +139,16 @@ const Navbar = () => {
   </div>  
 
    <div style={{fontSize:"11px",fontWeight:"700",border:"1px solid black",color:"white",backgroundColor:"#333",padding:"10px",justifyContent:"center",paddingLeft:"130px"}}>
-      <Link className={styles.a} to="/men">NEW ARRIVALS</Link>
-      <Link className={styles.a}  to="/men">DESIGNERS</Link>
-      <Link className={styles.a}  to="/men">CLOTHING</Link>
-      <Link className={styles.a}  to="/men">SHOES</Link>
-      <Link className={styles.a}  to="/men">ACCESSORIES & BAGS</Link>
-      <Link className={styles.a}  to="/men">8 BY YOOX</Link>
-      <Link className={styles.a}  to="/men">YOOXYGEN</Link>
-      <Link className={styles.a}  to="/men">COLLABORATIONS</Link>
-      <Link className={styles.a}  to="/men">BEST DEALS</Link>
-      <Link className={styles.a}  style={{backgroundColor:"#ca336e", color:"white",padding:"12px"}} to="/men">GIFT GUIDE</Link>
+      <Link className={styles.a} to="/product">NEW ARRIVALS</Link>
+      <Link className={styles.a}  to="/product">DESIGNERS</Link>
+      <Link className={styles.a}  to="/product">CLOTHING</Link>
+      <Link className={styles.a}  to="/product">SHOES</Link>
+      <Link className={styles.a}  to="/product">ACCESSORIES & BAGS</Link>
+      <Link className={styles.a}  to="/product">8 BY YOOX</Link>
+      <Link className={styles.a}  to="/product">YOOXYGEN</Link>
+      <Link className={styles.a}  to="/product">COLLABORATIONS</Link>
+      <Link className={styles.a}  to="/product">BEST DEALS</Link>
+      <Link className={styles.a}  style={{backgroundColor:"#ca336e", color:"white",padding:"12px"}} to="/product">GIFT GUIDE</Link>
    </div> 
     </>
   )

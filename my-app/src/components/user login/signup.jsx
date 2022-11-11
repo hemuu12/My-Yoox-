@@ -8,8 +8,9 @@ const Signup = () => {
     const handleClick = () => setShow(!show)
 
   return (
-    <>
-            <Stack align="center" justify="center" backgroundColor="gray.200" pb="30px">
+    <>      
+        <div style={{ padding:"10px",paddingBottom:"20px"}}>
+            <Stack align="center" justify="center" backgroundColor="gray.200" pb="30px" paddingBottom="10px">
             <p className={styles.border} ></p>
             <div style={{textAlign:"center"}}>
                 <Heading size="sm" pt={2}>MYOOX</Heading>
@@ -93,6 +94,7 @@ const Signup = () => {
                 <Button mt={5} backgroundColor="blackAlpha.900" color="white" size="md">Register</Button>
                 </Stack>
             </Stack>
+        </div>  
     </>
   )
 }
