@@ -8,7 +8,7 @@ const Container = ({rating,price,image,title,category,discount,reviewCount}) => 
     <>
         <div style={{textAlign:"center"}}>
                 <Box maxW='sm'  borderRadius='lg' overflow='hidden' textAlign="center" justify="center">
-                <Image src={image} alt="" w="250px" h="290px" />
+                <Image src={image} alt="" w="350px" h="290px" />
 
                 <Box p='6'>
                   <Box display='flex' >

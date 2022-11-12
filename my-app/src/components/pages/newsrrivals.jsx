@@ -72,23 +72,23 @@ if(loading){
         <div style={{margin:"auto"}}>
             <img  style={{margin:"auto"}} src="https://www.yoox.com/images/yoox80/banners/6764_1_NuoviArrivi_TOP_K_eu.jpg?634485886869569819" alt="1" />
         </div>
-        <div style={{textAlign:"right"}}>
+        <h1 style={{textAlign:"center",fontSize:"30px",fontWeight:"600"}}>CLOTHING NEW ARRIVALS</h1>
+        <div style={{textAlign:"right",marginTop:'10px'}}>
             <Button onClick={()=>setSortinggender("asc")}>Low To High</Button>
             <Button onClick={()=>setSortinggender("desc")}>High To Low</Button>
             <Button onClick={()=>setSorting("Mens")}>Mens</Button>
             <Button onClick={()=>setSorting("Womens")}>Women</Button>
         </div>
-        <p>line</p>
-        <div style={{display:"flex"}}>
+        <div >
             <div></div>
             {/* container */}
             <div>
             <div>
-            <Grid mr={20} align="center" justify="center" templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)" }} templateRows={{base:"repeat(1,1fr)",md:"repeat(3,1fr)",lg:"repeat(3,1fr)" }} gap={10}>
+            <Grid mr={20} mt={6} align="center" justify="center" templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)" }} templateRows={{base:"repeat(1,1fr)",md:"repeat(3,1fr)",lg:"repeat(3,1fr)" }} gap={10}>
                 {
                   data?.map((el)=>(
                         <>
-                        <div style={{border:'1px solid grey'}}>
+                        <div style={{border:'1px solid grey',width:"300px"}}>
                         <Container key={el.id}
                             image={el.images[0]}
                             category={el.category}

@@ -7,12 +7,12 @@ function arr(n) {
 const Pagination = ({current , total ,onChange}) => {
 
 const page= arr(total).map((a,i)=>(
-        <Button  disabled={current===i+1} key={i} onClick={() => onChange(i + 1)}>{i+1}</Button>
+        <Button style={{border:"none",backgroundColor:"white",marginLeft:"10px"}} disabled={current===i+1} key={i} onClick={() => onChange(i + 1)}>{i+1}</Button>
     ))
  
 return (
     <>
-    <div>{page}</div>
+    <div style={{width:"70%",margin:"auto",marginTop:"20px"}}>{page}</div>
     </>
   )
 }

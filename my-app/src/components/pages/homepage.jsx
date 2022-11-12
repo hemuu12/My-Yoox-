@@ -2,6 +2,10 @@ import React from 'react'
 import styles from "../user login/signup.module.css"
 import { Heading } from "@chakra-ui/react"
 import {Link} from "react-router-dom"
+import WinterWear from "../imges/WinterWear"
+import Slide from "../imges/slide"
+import TopTrendingBrands from "../imges/TopTrendingBrands"
+
 const Homepage = () => {
   return (
     <>
@@ -18,9 +22,9 @@ const Homepage = () => {
                 </div>
             </div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div><WinterWear/></div>
+                <div><Slide/></div>
+                <div><TopTrendingBrands/></div>
             </div>
 
         </div>
