@@ -10,11 +10,11 @@ import {Link} from "react-router-dom"
 
 import { CloseIcon ,TriangleDownIcon,EmailIcon ,Search2Icon } from "@chakra-ui/icons"
 import styles from "../user login/signup.module.css"
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
   
-
+  const { loginWithRedirect,logout ,isAuthenticated } = useAuth0()
 
   return (
     <>
@@ -31,8 +31,8 @@ const Navbar = () => {
       <CloseIcon  w={3} h={3}/> 
     </div>
     <table  style={{display:"flex",gap:"80px",fontSize:"15px",marginTop:'10px'}}>
-    <tbody>
-    <div style={{marginLeft:"20px" }}>
+    <tbody style={{display:"flex",gap:"80px",fontSize:"15px",marginTop:'10px'}}>
+    <div style={{marginLeft:"20px"}}>
     <td >
       <tr><Link to="/">UNITED STATES</Link></tr>
       <tr><Link to="/">UNITED KINGDOM</Link></tr>
@@ -110,13 +110,15 @@ const Navbar = () => {
   <Heading ml={120} size="esm" >FREE STANDARD SHIPPING ON ORDERS OVER $250</Heading>
   <div style={{marginLeft:"80px"}}>
     <Menu>
-    <Menu backgroundColor="white"  pl={25} fontSize={12}  _hover={{textDecoration:"underline"}} as={Button} >
-      <Link style={{fontSize:"10",fontWeight:"600",marginLeft:"70px"}} _hover={{textDecoration:"underline" }} to="/signup">REGISTER</Link>
+    <Menu backgroundColor="white" pr={2} pl={6} fontSize={13} fontWeight="800"  _hover={{textDecoration:"underline"}} as={Button} >
+    <button onClick={() => loginWithRedirect()}>Register/SignIn</button>
     </Menu>
-    </Menu>
-    <Menu>
-    <Menu backgroundColor="white" pr={2} pl={6} fontSize={12}  _hover={{textDecoration:"underline"}} as={Button} >
-      <Link style={{fontSize:"10",fontWeight:"600",marginLeft:"40px"}} _hover={{textDecoration:"underline" }} to="/login">LOGIN</Link>
+    <Menu backgroundColor="blue"  ml={6} fontSize={13} fontWeight="800"  _hover={{textDecoration:"underline"}} >
+      {
+        isAuthenticated===true? <button style={{backgroundColor:"#333",marginLeft:"20px",color:"white",padding:"5px"}} onClick={() => logout({ returnTo: window.location.origin })}>
+        Log Out
+      </button>:null
+      }
     </Menu>
     </Menu> 
   </div>

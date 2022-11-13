@@ -6,18 +6,25 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom"
 import { ChakraProvider } from '@chakra-ui/react'
 import CartContextProvider from "./components/cartx/cartprovider"
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
   <ChakraProvider>
   <BrowserRouter>
+  <Auth0Provider
+    domain="dev-134lw8smgkmt52qx.uk.auth0.com"
+    clientId="I5hRXeC03TFxnW1GTJxD2vC4lW0fem77"
+    redirectUri={window.location.origin}
+  >
   <CartContextProvider>
   <App />
   </CartContextProvider>
+  </Auth0Provider>
   </BrowserRouter>
   </ChakraProvider>
-  </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

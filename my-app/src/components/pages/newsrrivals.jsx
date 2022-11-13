@@ -7,6 +7,8 @@ import Container from "./container"
 import {Grid,Button,Skeleton,Stack} from "@chakra-ui/react"
 import { CartContext } from '../cartx/cartprovider'
 import { addToCart } from '../cartx/action'
+import Load from "./skeleton"
+
 
 const fetch=({page,limit,sort,order})=>{
 return axios.get("http://localhost:8000/clothing?",{
@@ -30,7 +32,7 @@ const itemAlreadyExists = (id,cartItems) =>{
 const Newarrivals = () => {
 const [data, setData]=useState([])
 const [page, setPage]=useState(1)
-const[loading,setLoading] = useState(false);
+const [loading,setLoading] = useState(false);
 const [sorting,setSorting]=useState("Mens")
 const [sortinggender,setSortinggender]=useState("desc")
 const {state,dispatch} = useContext(CartContext);
@@ -42,29 +44,10 @@ useEffect(()=>{
 },[page,sorting,sortinggender])
 
 if(loading){
-    return(
-      <Stack my={20}>
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      <Skeleton height="40px" />
-      </Stack>
-  
-    )
-  }
-  
-
+    return (
+        <Load />
+        )
+}
 
   return (
      <>
@@ -84,7 +67,7 @@ if(loading){
             {/* container */}
             <div>
             <div>
-            <Grid mr={20} mt={6} align="center" justify="center" templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)" }} templateRows={{base:"repeat(1,1fr)",md:"repeat(3,1fr)",lg:"repeat(3,1fr)" }} gap={10}>
+            <Grid mr={20} mt={6} align="center" justify="center" templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)" }} templateRows={{base:"repeat(1,1fr)",md:"repeat(3,1fr)",lg:"repeat(3,1fr)" }} gap={10} paddingLeft={20}>
                 {
                   data?.map((el)=>(
                         <>

@@ -8,13 +8,16 @@ const Cart = () => {
   const {state,dispatch} = useContext(CartContext);
   const {isOpen,onOpen,onClose} = useDisclosure();
   const cancelRef = React.useRef();
-
+  
 const handleCheckout = () =>{
   dispatch(checkOut());
   onClose()
 }
 
     return(
+
+
+
       <Box>
         <TableContainer mt={{base:20, sm:20, md:28, lg:32}}>
         <Table 
