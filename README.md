@@ -31,29 +31,17 @@ New Arrivals Every Week to Reinvigorate your Wardrobe, Make the Most of it Now. 
 
 - ## Home page
 
-     <img width="949" alt="Home1" src="">
+     <img width="949" alt="Home1" src="https://i.postimg.cc/44wnJ2V3/Screenshot-21.png">
 
-     <img width="947" alt="Home2" src="">
 
 - ## Sign-Up page
 
-     <img width="959" alt="SignupPage" src="">
-
-- ## Login page
-
-     <img width="959" alt="LoginPage" src="">
-
-- ## Product page
-
-     <img width="950" alt="ProductPage" src="">
+     <img width="959" alt="SignupPage" src="https://i.postimg.cc/0QV6HVCr/Screenshot-22.png">
 
 
 - ## Cart page
 
-     <img width="960" alt="CartPage" src="">
-
-- ## Checkout page
-
+     <img width="960" alt="CartPage" src="https://i.postimg.cc/Y2JXXRDd/Screenshot-23.png">
 
    
 
