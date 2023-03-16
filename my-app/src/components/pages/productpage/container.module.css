@@ -1,0 +1,145 @@
+.main{
+    text-align: left;
+    cursor: pointer;
+    
+    padding:10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main:hover{
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main>:last-child{
+padding: 0px 5px;
+}
+.main:hover img{
+    filter: brightness(100%);
+    transform: scale(1.01);
+}
+img{
+    width: 100%;
+    transition: transform .5s, filter .3s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(90%);
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    gap: 5px;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.star{
+    color: teal;
+}
+
+.title{
+margin: 2px 0px;
+font-weight: bold;
+font-family: Whitney, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+color: #464e5d;
+}
+
+/* .subtitle{
+margin: 2px 0px;
+font-weight: 400;
+color:#53575f;
+font-size: 14px;
+} */
+
+.prc{
+display: flex;
+justify-content: space-between;
+width: max-content;
+align-items: center;
+gap: 0px 5px;
+}
+
+.prc>P:first-child{
+    font-size: 14px;
+margin: 3px 0px;
+font-weight: bold;
+color: #393d45;
+
+
+}
+.prc>p:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    color:#6f737b;
+   text-decoration: line-through;
+
+}
+.prc>:last-child{
+    color: #ff905a;
+    font-size: 13px;
+
+
+}
+
+.wishlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid rgb(185, 185, 185);
+   width: 85%;
+   margin:5px auto;
+   color: rgb(33, 34, 41);
+   animation: fadeIn .7s;
+
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.wishlist:hover{
+    
+    cursor: pointer;
+    z-index: 4;
+}
+.hoverWish{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.959);
+    padding: 5px 0px;
+    width: 100%;
+   border-radius: 5px;
+   position: relative;
+   top: 1px;
+
+}
+.wishlistWord{
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.wishlistWord:hover{
+    font-size: larger;
+    border: 2px solid #393d45;
+}
+
+
+
+.size{ 
+    font-size: 14px;
+    margin:2px 0px ;
+    animation: fadeIn .3s;
+
+
+
+}
+.size p{
+    font-weight: 400;
+    color: #53575f;
+}

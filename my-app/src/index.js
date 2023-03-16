@@ -5,8 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom"
 import { ChakraProvider } from '@chakra-ui/react'
-import CartContextProvider from "./components/cartx/cartprovider"
 import { Auth0Provider } from "@auth0/auth0-react";
+import { Provider} from "react-redux"
+import { store } from './Redux/store';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,13 +17,13 @@ root.render(
   <ChakraProvider>
   <BrowserRouter>
   <Auth0Provider
-    domain="dev-134lw8smgkmt52qx.uk.auth0.com"
-    clientId="I5hRXeC03TFxnW1GTJxD2vC4lW0fem77"
+    domain="dev-foi6lv677qr5xvxk.us.auth0.com"
+    clientId="rALtYgPAvQWemEAbD2AxtMMqGbeDcDYC"
     redirectUri={window.location.origin}
   >
-  <CartContextProvider>
+  <Provider store={store}>
   <App />
-  </CartContextProvider>
+  </Provider>
   </Auth0Provider>
   </BrowserRouter>
   </ChakraProvider>
