@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../user login/signup.module.css"
+import styles from "./navbar.module.css"
 import { Heading,Stack,HStack,Input,RadioGroup,Radio,Checkbox ,Button} from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
 import {EmailIcon} from "@chakra-ui/icons"

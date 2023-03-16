@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../user login/signup.module.css"
+import styles from "./navbar.module.css"
 import { Heading,Stack,Skeleton } from "@chakra-ui/react"
 import {Link} from "react-router-dom"
 import WinterWear from "../imges/WinterWear"

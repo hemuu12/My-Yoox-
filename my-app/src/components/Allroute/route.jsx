@@ -1,21 +1,18 @@
-
 import React from 'react'
-
 import {Routes,Route} from "react-router-dom"
-import Newarrivals from '../pages/newsrrivals'
-import Login from "../user login/login"
+import Newarrivals from '../pages/productpage/newsrrivals'
 import Homepage from '../pages/homepage'
-import Cart from "../pages/cart"
+import Cart from "../pages/cart/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
+import PaymentSuccess from '../pages/cart/PaymentSuccess'
+import Payment from '../pages/cart/Payment'
+import Address from '../pages/cart/Address'
 const AllRoute = () => {
   const {isAuthenticated, loginWithRedirect} = useAuth0()
   return (
     <>
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
-      <Route path="/login" element={
-      <Login/>
-      }></Route>
       {/* <Route path="/signup" element={<Signup />}></Route> */}
       <Route path="/product" element={<Newarrivals />}></Route>
       <Route path="/cart" element={
@@ -24,6 +21,9 @@ const AllRoute = () => {
     
       </div>
       }></Route>
+      <Route path='/address' element={<Address/>}/>
+      <Route path='/payment' element={<Payment/>}/>
+      <Route path='/paymentSuccess' element={<PaymentSuccess/>}/>
     </Routes>
     </>
   )
