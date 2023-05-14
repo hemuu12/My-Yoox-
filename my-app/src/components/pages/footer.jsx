@@ -11,8 +11,8 @@ import {GrPinterest  } from 'react-icons/gr';
 const Footer = () => {
   return (
     <>
-        <div style={{display:'flex',gap:'50px',textAlign:"center",paddingTop:'20px',paddingLeft:"150px",backgroundColor:"lightgrey"}}>
-            <div>
+        <div  className={styles.footer}>
+            <div className={styles.new}>
                 <Heading size="sm" >NEW TO YOOX</Heading>
                 <p style={{marginBottom:"10px"}} className={styles.line3}></p>
                 <div style={{width:"80%",textAlign:"center",marginLeft:"15px",fontSize:"13px"}}>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                
             </div>
-                <div>
+                <div className={styles.help}>
                     <Heading size="sm">HELP</Heading>
                     <p style={{marginBottom:"10px"}} className={styles.line3}></p>
                         <div style={{width:"80%",textAlign:"center",marginLeft:"15px",fontSize:"13px"}}>
@@ -37,7 +37,7 @@ const Footer = () => {
                         </div>
                     
                 </div>
-                <div style={{boxShadow:"rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",backgroundColor:"white",width:"24%" ,padding:'20px',textAlign:"center",justifyContent:"center",paddingTop:'20px'}}>
+                <div className={styles.mainfooter} >
                     <Stack>
                         <EmailIcon w={6} h={6} m="auto"/>
                         <Heading size="md">YOOX NEWS</Heading>
@@ -67,7 +67,7 @@ const Footer = () => {
 
                     </Stack>
                 </div>
-                <div>
+                <div className={styles.myyoox}>
                     <Heading size="sm">MYOOX</Heading>
                     <p style={{marginBottom:"10px"}} className={styles.line3}></p>
                         <div style={{width:"80%",textAlign:"center",marginLeft:"15px",fontSize:"13px"}}>
@@ -81,7 +81,7 @@ const Footer = () => {
                         </div>
                     
                 </div>
-                <div>
+                <div className={styles.help}>   
                     <Heading size="sm">ABOUT US</Heading>
                     <p style={{marginBottom:"10px"}} className={styles.line3}></p>
                         <div style={{width:"80%",textAlign:"center",marginLeft:"15px",fontSize:"13px"}}>
@@ -92,8 +92,8 @@ const Footer = () => {
                         </div>
                 </div>  
         </div>
-        <div style={{display:"flex",alignItems:"center",gap:"250px",backgroundColor:"lightgrey",marginTop:"3px"}}>
-            <div style={{display:"flex",alignItems:"center",paddingLeft:"70px"}}>
+        <div className={styles.social}>
+            <div className={styles.links} >
                <p>CONNECT WITH US</p>
                <div>
                <HStack ml={1} >
@@ -112,7 +112,7 @@ const Footer = () => {
                 <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
             </div>
         </div>
-        <div style={{paddingTop:'50px',textAlign:"center",fontSize:"14px",height:"150px",backgroundColor:"#333",color:"white"}}>
+        <div className={styles.footerlast} >
                 <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
                 <p style={{color:"lightgrey",fontSize:"13px",marginTop:"5px"}}>LEGAL AREA / PRIVACY POLICY</p>
         </div>
