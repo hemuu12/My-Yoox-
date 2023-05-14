@@ -112,7 +112,7 @@ const Footer = () => {
                 <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
             </div>
         </div>
-        <div style={{paddingTop:'50px',textAlign:"center",fontSize:"14px",height:"150px",backgroundColor:"#333",color:"white"}}>
+        <div className={styles.footerlast} >
                 <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
                 <p style={{color:"lightgrey",fontSize:"13px",marginTop:"5px"}}>LEGAL AREA / PRIVACY POLICY</p>
         </div>

@@ -266,7 +266,14 @@ padding-left: 130px;
   padding-left: 70px;
 }
 
-
+.footerlast{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+}
 
 
 
