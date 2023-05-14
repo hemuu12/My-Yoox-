@@ -150,4 +150,209 @@
     margin-left: 40px;
     margin-top: 10px;
   }
+
+
+/* topnav starts*/
+
+.topnav{
+  display: flex;
+  align-items: center;
+  border: 1.5px solid lightgrey;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.Heading{
+  font-weight: 650;
+
+}
+
+
+/* topnav ends*/
+
+
+/* midnav  start */
+
+
+.midnav{
+
+display: flex;
+text-align: center;
+border: 1px solid black;
+font-size: 16px;
+font-weight: 650;
+align-items: center;
+gap: 100px;
+justify-content: center;
+}
+.logo{
+  width: 80px;
+  height: 60px;
+  margin-left: 50%;
+  margin-top: 13px;
+}
+
+.search{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 20px;
   
+}
+
+/* midnav over */
+
+
+
+/* bottom nav starts */
+
+.bottomnav{
+font-size: 11px;
+font-weight: 700px;
+border: 1px solid black;
+color: #fff;
+background-color: #222121;
+justify-content: center;
+padding: 10px;
+padding-left: 130px;
+
+}
+
+/* bottom nav ends */
+
+
+
+
+/* footer */
+
+
+.footer{
+
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 150px;
+  background-color: lightgrey;
+
+}
+
+
+.mainfooter{
+
+
+  box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  width: 24%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  
+  }
+
+.social{
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  background-color: lightgrey;
+  margin-top: 3px;
+
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+}
+
+
+
+
+
+
+
+
+/*  mobilesize */
+
+@media screen and (min-width:325px) and (max-width:600px){
+  
+.midnav{
+  width: auto;
+  font-size: 16px;
+  padding-left: 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.topnav{
+
+  width: auto;
+  font-size: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(204, 211, 206);
+  padding: 5px;
+}
+
+.help{
+  display: none;
+}
+
+.flags{
+  display: none;
+}
+.Heading{
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+
+.bottomnav{
+  display: none;
+}
+
+
+.footer{
+  width: auto;
+  padding-left: 0px;
+}
+
+
+
+.myyoox{
+  display: none;
+}
+.new{
+  display: none;
+}
+
+.mainfooter{
+
+width: 75%;
+text-align: center;
+justify-content: center;
+padding-top: 10px;
+margin: auto;
+}
+
+.social{
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 7px;
+  font-size: 15px;
+}
+
+.links{
+ width: auto;
+  padding-left: 20px;
+ justify-content: center;
+}
+
+
+}

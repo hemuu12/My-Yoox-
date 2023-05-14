@@ -5,13 +5,13 @@ function TopTrendingBrands (){
     return(
         <>
       
-        <Box  width="90%" margin="auto" marginTop={20} >
+        <Box  width="90%" margin="auto" marginTop={10} >
             <Box display="flex" p={2}>
             <h1 style={{fontSize:"30px",paddingBottom:"10px"}}>Top Trending Brands</h1>
             </Box>
        
        <Stack direction='row' >
-        <Grid templateColumns='repeat(6, 1fr)' templateRows='repeat(2,1fr)' width="100%" gap={4}>
+        <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(2,1fr)' width="100%" gap={4}>
     <Box cursor="pointer">         
   <Image
    

@@ -5,7 +5,7 @@ function TopPicks ({image,image1,image2,text}){
     return(
         <>
       
-        <Box  width="90%" margin="auto" marginTop={10} >
+        <Box  width="90%" margin="auto" marginTop={5} >
             <Box display="flex" p={2}>
             <h1 style={{fontSize:"30px",paddingBottom:"10px"}}>{text}</h1>
             </Box>
