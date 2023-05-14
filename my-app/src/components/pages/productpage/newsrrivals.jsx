@@ -6,8 +6,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProducts } from '../../../Redux/Appreducer/Action'
 import Container from './container'
 import Pagination from "./pagination" 
-import Filter from './Filter'
-
+// import Filter from './Filter'
+import SideBar from './SideBar'
+import styles from "./container.module.css"
 
 
 const Newsrrivals = () => { 
@@ -49,23 +50,23 @@ const Newsrrivals = () => {
  return (
    <>
       <Grid
-            gridTemplateColumns={"20% 80%"}
+            gridTemplateColumns={"18% 82%"}
             >
           <Box 
           border={"1px solid #edf2f7"}
           
           >
           
-          <Filter/>
+          <SideBar/>
           </Box>
           <Box>
               <h1 style={{fontSize:"25px", marginLeft:"25px"}}>All Products</h1>
-                <SimpleGrid 
-                columns={3} 
-                spacingX='40px'
-                spacingY='30px'
-                w="100%"
-                p="20px"
+                <div className={styles.productbox}
+                // columns={3} 
+                // spacingX='40px'
+                // spacingY='30px'
+                // w="100%"
+                // p="20px"
                 >
                 {
                   Products.length>0 && Products.map((el)=>(
@@ -73,7 +74,7 @@ const Newsrrivals = () => {
                   )
                   )
                 }
-                </SimpleGrid>
+                </div>
                 <Pagination total={Products?.length} current={page} onChange={(page) => setPage(page)}/>
           </Box>
           
